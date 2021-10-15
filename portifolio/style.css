@@ -4,6 +4,16 @@ body {
   font-family: "Shippori Mincho", serif;
 }
 
+div.linha {
+  z-index: -1;
+  top: 410px;
+  left: 177px;
+  width: 2px;
+  height: 1150px;
+  position: absolute;
+  background-color: #999999;
+}
+
 aside {
   width: 10%;
   height: 1500px;
@@ -27,6 +37,13 @@ main {
 main div.generalInfo div {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+}
+
+main div.generalInfo a, address {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 main div div.title {
@@ -35,5 +52,6 @@ main div div.title {
 }
 
 img {
-  width: 50px;
+  width: 40px;
+  margin-right: 10px;
 }
