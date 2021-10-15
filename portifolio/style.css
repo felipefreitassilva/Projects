@@ -1,38 +1,39 @@
 body {
-    margin: 0;
-    display: flex;
+  margin: 0;
+  display: flex;
+  font-family: "Shippori Mincho", serif;
 }
 
 aside {
-    width: 10%;
-    height: 1200px;
-    padding-right: 0.8%;
-    background-color: #999999;
+  width: 10%;
+  height: 1500px;
+  padding-right: 0.8%;
+  background-color: #999999;
 }
 
 aside div {
-    display: flex;
-    height: 100vh;
-    text-align: right;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  height: 100vh;
+  text-align: right;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 main {
-    width: 90%;
-    padding-left: 0.8%;
+  width: 90%;
+  padding-left: 0.8%;
 }
 
 main div.generalInfo div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 main div div.title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 img {
-    width: 50px;
+  width: 50px;
 }
