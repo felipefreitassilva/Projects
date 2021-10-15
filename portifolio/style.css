@@ -5,10 +5,10 @@ body {
 }
 
 div.linha {
-  z-index: -1;
-  top: 410px;
-  left: 177px;
   width: 2px;
+  top: 395px;
+  left: 167px;
+  z-index: -1;
   height: 1150px;
   position: absolute;
   background-color: #999999;
@@ -18,7 +18,7 @@ aside {
   width: 10%;
   height: 1500px;
   padding-right: 0.8%;
-  background-color: #999999;
+  background-color: #cccccc;
 }
 
 aside div {
@@ -34,24 +34,31 @@ main {
   padding-left: 0.8%;
 }
 
-main div.generalInfo div {
+div.generalInfo div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-main div.generalInfo a, address {
+div.generalInfo a,
+address {
   color: black;
   font-size: 16px;
+  font-style: normal;
   text-decoration: none;
 }
 
-main div div.title {
+div div.title {
   display: flex;
   align-items: center;
 }
 
+div.generalInfo img {
+  width: 30px;
+}
+
 img {
   width: 40px;
-  margin-right: 10px;
+  margin: 0 10px 0 3.3px;
+  background-color: white;
 }
