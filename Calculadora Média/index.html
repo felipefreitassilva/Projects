@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title>Calcular Minha Média</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Calculadora de Média Ponderada">
+        <meta name="keywords" content="calculadora,calcular,media,ponderada,3tri,terceirotri,terceirotrimeste,3trimestre">
+        <meta name="author" content="Felipe Freitas">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@350&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        
+        <div class="menu-wrapper">
+            <h1>Bem-Vindo!</h1>
+            <h2>Aqui existem 3 opções de calculadora; uma para saber quanto você precisa para passar; outra para saber quanto você precisa para ter média geral 8; e uma última para saber quanto você precisa para ter média geral 9.</h2>
+            <p>Eaí, qual vai ser?</p>
+
+            <div class="button-wrapper">
+
+                <form action="mediaseis.php">
+                    <button>Média 6</button>
+                </form>
+
+                <form action="mediaoito.php">
+                    <button>Média 8</button>
+                </form>
+
+                <form action="medianove.php">
+                    <button>Média 9</button>
+                </form>
+
+            </div><!--button-wrapper-->
+
+            <p>Já tem suas notas?</p>
+
+            <div class="button-wrapper">
+                
+                <form action="mediageral.php" class="btn-1">
+                    <button>Calcular minha Média Geral*</button>
+                    <p>*Apenas uma matéria</p>
+                </form>
+
+                <form action="mediageralanual.php" class="btn-2">
+                    <button>Calcular minha Média Anual*</button>
+                    <p>*Todas as matérias</p>
+                </form>
+
+            </div><!--button-wrapper-->
+
+            <form action="feedback.html" class="notas">
+                <button class="notas">Dar meu feedback</button>
+            </form>
+
+        </div><!--menu-wrapper-->
+
+        <footer style="background-color: rgba(0,0,0,0.3); text-align: center; width: 100%; position: fixed; bottom: 0;">
+            <h5>&copy; Copyright - 2020 - Felipe Freitas Silva</h5>
+        </footer>
+
+    </body>
+
+</html>
