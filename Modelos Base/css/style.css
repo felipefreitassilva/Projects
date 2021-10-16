@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*Paleta de Cores: */
+:root {
+  --principal: #f00;
+  --secundaria: rgb(0, 255, 0);
+  --background: blue;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  box-shadow: 0 5px 50px -30px #000000;
+}
+
+nav ul {
+  flex-direction: row;
+}

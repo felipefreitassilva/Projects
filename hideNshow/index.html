@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto</title>
+    <style>
+        span.relativeClauses:hover{
+            background-color: #effa1b;
+        }
+        span.linkers:hover{
+            background-color: #60ddeb;
+        }
+        span.phrasalVerbs:hover{
+            background-color: #63eb02;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>A very famous book from the early 1980's, <span class="relativeClauses">which</span> remains actual until this day is "The Neverending Story '' - or "Die Unendliche Geschichte " in the original title - was written by Michael Ende, a German novelist. It is a classic all around the world and is one of the first books, <span class="relativeClauses">which</span> was not made only with pictures and cute drawings, I read. From the moment I first opened it to the many that followed this became <span title="indubitavelmente">undoubtedly</span> my favorite book of all times, and I have read plenty of them.</p>
+
+        <p>The book is about a young boy, Bastian Baltasar Bux, <span class="relativeClauses">who</span> was not well accepted by his classmates and was, <span class="linkers">thus</span>, very lonely. One day, he visited this old man's library, and there he found a book, <span class="relativeClauses">which</span> he stole to read in the school's attic, so no one would bother him. The book was entitled "The Neverending Story '', and this simple fact changes our whole view of the book.</p>
+
+        <p>In spite of its age, "The Neverending Story" brings out various problems that continue to be true, such as social exclusion in schools, shyness and, the one which the book's main story is based upon; fantasy, and the imagination of children: the never-ending question being what the limits of imagination are and how visible are the effects they have on what we call the "real world".</p>
+
+        <p>Therefore, I highly recommend everyone, man, child and elder, to give this book a try. I doubt it will not have an impact on your life, even if small. I must say however, that those who are willing to read it must have space for imagination, and cannot take this book sceptically, as though it was meant to be a true story based on facts, it is after all, the tales of a child who, excluded from his peers, imagined this whole Fantasy world where he could be the best version of himself.</p>
+    </div>
+
+    <div>
+        <input type="button" value="Mostrar tradução"
+        onclick="showTranslation()">
+        <input type="button" value="Ocultar tradução"
+        onclick="hideTranslation()">
+    </div>
+
+    <div id="textPt">
+        <p>Um livro muito famoso do início da década de 1980, que permanece atual até hoje é "The Neverending Story '' - ou" Die Unendliche Geschichte "no título original - foi escrito por Michael Ende, um romancista alemão. É um clássico em todos os aspectos o mundo e é um dos primeiros livros, que não foi feito apenas com fotos e desenhos fofos, eu li. Desde o momento em que o abri para muitos que se seguiram, este tornou-se sem dúvida o meu livro favorito de todos os tempos, e tenho lido muitos deles.</p>
+
+        <p>O livro é sobre um menino, Bastian Baltasar Bux, que não era bem aceito pelos colegas de classe e, portanto, muito solitário. Um dia, ele visitou a biblioteca desse velho e lá ele encontrou um livro, que ele roubou para ler no sótão da escola, para que ninguém o incomodasse. O livro era intitulado "A história sem fim", e esse simples fato muda toda a nossa visão do livro.</p>
+        
+        <p>Apesar da idade, "The Neverending Story" traz à tona vários problemas que continuam a ser verdadeiros, como a exclusão social nas escolas, a timidez e, aquela em que se baseia a história principal do livro; fantasia e a imaginação das crianças: a questão sem fim é quais são os limites da imaginação e quão visíveis são os efeitos que eles têm no que chamamos de "mundo real".</p>
+        
+        <p>Portanto, eu recomendo fortemente a todos, homens, crianças e idosos, que experimentem este livro. Duvido que não tenha um impacto em sua vida, mesmo que pequeno. Devo dizer, no entanto, que aqueles que estão dispostos a lê-lo devem ter espaço para a imaginação, e não podem tomar este livro com ceticismo, como se fosse uma história verdadeira baseada em fatos, afinal, são contos de uma criança que, excluído de seus pares, imaginou todo esse mundo de fantasia onde poderia ser a melhor versão de si mesmo.</p>
+    </div>
+    
+    <script>
+        hideTranslation();
+
+        function showTranslation() {
+            document.getElementById('textPt').style.visibility = 'visible'
+        }
+
+        function hideTranslation() {
+            document.getElementById('textPt').style.visibility = 'hidden'
+        }
+    </script>
+
+</body>
+</html>

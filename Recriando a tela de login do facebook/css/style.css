@@ -1,0 +1,167 @@
+/* Aqui começa o estilo do documento em geral */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+	background-color: #fafafa;
+}
+
+/* Aqui termina o estilo do documento em geral */
+/* Aqui começa o cabeçalho */
+
+header{
+	width: 100%;
+	height: 10%;
+	padding: 0 25%;
+	background-color: rgb(60, 94, 158);
+	border-bottom: 1px solid rgb(51, 51, 51);
+	color: white;
+	display: flex;
+}
+
+header .logo{
+	width: 30%;
+	height: 100%;
+	display: flex;
+}
+
+header .logo h1{
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 40px;
+	margin: auto 70% auto 0;
+}
+
+header .lista-login{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 10%;
+}
+
+header .form{
+	flex-direction: column;
+}
+
+header .form li{
+	list-style-type: none;
+}
+
+header .enviar-login{
+	height: fit-content;
+	list-style-type: none;
+}
+
+header a.besta{
+	color: rgb(60, 94, 158);
+}
+
+header a.besta:hover{
+	color: rgb(60, 94, 158);
+	cursor: context-menu;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover{
+	color: rgb(0, 0, 0);
+}
+
+/* Aqui termina o cabeçalho */
+/* Aqui começa o conteúdo */
+
+content{
+	width: 100%;
+	display: flex;
+	margin: -10px 0;
+	height: 65%;
+	padding: 40px 25%;
+	background-color: rgb(233, 236, 245);
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(162, 167, 204));
+	border-bottom: 1px solid rgb(148, 146, 146);
+}
+
+content section.perfiis{
+	width: 60%;
+	justify-content: flex-start;
+	padding-right: 5%;
+}
+
+content section.perfiis img{
+	width: 100%;
+}
+
+content section.abra-uma-conta{
+	width: 40%;
+	justify-content: flex-end;
+	padding-top: 0;
+	padding-left: 5%;
+}
+
+content .abra-uma-conta input{
+	
+}
+
+content .abra-uma-conta input[type=text]{
+	width: 100%;
+	height: 30px;
+}
+
+content .abra-uma-conta input[type=text]:nth-of-type(1){
+	width: 49%;
+}
+
+content .abra-uma-conta input[type=text]:nth-of-type(2){
+	width: 49%;
+}
+
+/* Aqui termina o conteúdo */
+/* Aqui começa o rodapé */
+
+footer{
+	padding: 40px 25% 0 25%;
+	width: 100%;
+	height: 25%;
+	background-color: #fafafa;
+}
+
+footer hr{
+	margin: 12px auto;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer .idiomas{
+	margin: 0 auto;
+	word-spacing: 15px;
+	font-size: 14px;
+}
+
+footer .outros-botoes{
+	word-spacing: 25px;
+	font-size: 13px;
+}
+
+/* Aqui termina o rodapé */
+/* Aqui começa o responsivo *
+
+@media screen and (max-width: 1280px){
+	content,footer{
+		padding: 10px 15%;
+	}
+}
+
+/* Aqui termina o responsivo */

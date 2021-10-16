@@ -1,0 +1,2 @@
+Ao confirmar pedido enviar um número para o telefone do cliente que diz: Para confirmar seu pedido, informe o código recebido
+Confirma se o código enviado é o mesmo respondido, e só então valida o pedido.

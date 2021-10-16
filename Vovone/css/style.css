@@ -1,0 +1,762 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    background-color: #FBFAF8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+    Paleta de cores:
+    #4683AC - Azul
+    #698F3F - Verde
+    #FBFAF8 - Branco
+    #E7DECD - Bege
+    #A18D67 - Marrom
+    #804E49 - Marron
+*/
+
+
+#cardapio,#aperitivos,#salgados,#sobremesas{
+    height: 106px;
+}#contato{
+    height: 86px;
+    background-color: #E7DECD;
+}#pedido{
+    height: 86px;
+}
+
+
+nav{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 9vh;
+    background-color: #698F3F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav ul.logo{
+    margin-left: 50px;
+    width: 113px;
+    height: 100%;
+    padding: 0.9% 0;
+}
+
+nav ul.logo a{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul.logo img{
+    max-width: 100%;
+    height: 100%;
+}
+
+nav ul.navegacao li{
+    margin-right: 50px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover,nav ul li span:hover{
+    color: white;
+}
+
+nav ul.cardapioMenu{
+    display: none;
+    position: absolute;
+    background-color: #698F3F;
+    width: 160px;
+    padding: 6px 0 22px 0;
+    text-align: center;
+}
+
+nav ul.cardapioMenu li{
+    margin-top: 36px;
+    width: 100%;
+}
+
+nav ul li span{
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav ul.hamburger{
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    padding-bottom: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav ul.hamburger{
+    font-size: 58px;
+    height: 70px;
+}
+
+nav ul.navegacaoMobile{
+    display: none;
+    background-color: #698F3F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 32px 0 16px;
+}
+
+nav ul.navegacaoMobile li{
+    padding-bottom: 24px;
+}
+
+nav ul.navegacaoMobile li:first-of-type:not(.cardapioMenuMobile li:first-of-type){
+    padding-top: 9vh;
+}
+
+nav ul.cardapioMenuMobile{
+    display: block;
+}
+
+nav ul.cardapioMenuMobile li{
+    display: block;
+    padding-left: 20px;
+}
+
+
+#inicio{
+    width: 100%;
+}
+
+.produtos-wrapper{
+    padding: 9vh 0 0 0;
+}
+
+.produtos-destaque-wrapper{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos-destaque{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.destaque a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.destaque a img{
+    width: 100%;
+    height: 100%;
+}
+
+.destaque a div{
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.destaque a div h4{
+    color: black;
+    font-size: 36px;
+    background-color: #4683AC;
+    width: fit-content;
+    height: 45px;
+}
+
+
+.cardapio-wrapper{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cardapio-wrapper h2{
+    font-size: 54px;
+}
+
+.cardapio-wrapper div h4{
+    font-size: 30px;
+    color: #698F3F;
+}
+
+.cardapio-wrapper div p{
+    margin-top: 18px;
+}
+
+
+.pedido{
+    background-color: #E7DECD;
+    padding: 28px 100px;
+}
+
+.pedido .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form form{
+    width: 60%;
+}
+
+.form form h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form form .form-wrapper div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form form .form-wrapper div.nomeetelefone,.form form .form-wrapper div.novoproduto,.form form .form-wrapper div.obseconfirm{
+    margin-top: 12px;
+}
+
+.form form .form-wrapper div input, select, option, textarea, button{
+    font-family: 'Montserrat', sans-serif;
+    outline: 0;
+    width: 100%;
+    height: 30px;
+    padding-left: 6px;
+    margin-bottom: 12px;
+    border: 0.05px solid rgba(0,0,0,1);
+}
+
+input[type=number]{
+    text-align: center;
+}button[form=form_id]{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    cursor: pointer;
+    background-color: #698F3F;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}button[form=form_id]:hover{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4683AC;
+}
+
+.form form .form-wrapper div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.form form .form-wrapper div.nomeetelefone div:nth-of-type(1), .form form .form-wrapper div.nomeetelefone div:nth-of-type(2){
+    width: 48%;
+}
+
+.form form .form-wrapper div.novoproduto div div{
+    height: 20px;
+}.form form .form-wrapper div.novoproduto div:nth-of-type(1){
+    width: 52%;
+}.form form .form-wrapper div.novoproduto div:nth-of-type(1) select option[disabled]{
+    color: black;
+    font-weight: bold;
+}.form form .form-wrapper div.novoproduto div:nth-of-type(2){
+    width: 10%;
+}.form form .form-wrapper div.novoproduto div:nth-of-type(3){
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form form .form-wrapper div.obseconfirm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form form .form-wrapper div.obseconfirm div diV{
+    height: 20px;
+}
+
+.form form .form-wrapper div.obseconfirm div:first-of-type{
+    width: 70%;
+}.form form .form-wrapper div.obseconfirm div:last-of-type{
+    width: 26%;
+}
+
+.form form .form-wrapper div.obseconfirm textarea{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 60px;
+    resize: vertical;
+    padding-top: 6px;
+    font-size: 16px;
+}
+
+.form form .form-wrapper div.obseconfirm input[type=submit]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    background-color: #698F3F;
+    color: white;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}.form form .form-wrapper div.obseconfirm input[type=submit]:hover{
+    background-color: #4683AC;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form div.sumup-wrapper{
+    width: 30%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.form div.sumup{
+    /*background-color: cadetblue;*/
+    border: 2px solid #4683AC;
+    width: 100%;
+    height: 50%;
+    padding: 0 2%;
+    display: none;
+    flex-direction: column;
+}
+
+.form div.sumup h3{
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.sumup div{
+    margin-top: 18px;
+}
+
+.form div.sumup div.vermais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form div.sumup div.vermais a{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 180px;
+    max-width: 300px;
+}
+
+.form div.sumup div.vermais a img{
+    cursor: pointer;
+}
+
+.form div.sumup div:last-of-type{
+    position: relative;
+    bottom: 5px;
+}
+
+.meuspedidos-wrapper{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100vh + 1902px);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.meuspedidos{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    max-width: 900px;
+    width: 94%;
+    border: 4px solid rgb(210, 210, 210);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+thead tr th{
+    background-color: white;
+}
+
+tfoot tr th{
+    background-color: #A18D67;
+    padding-right: 70px;
+    text-align: right;
+}
+
+tr:nth-child(odd){
+    background-color: #E7DECD;
+}
+
+
+.contatenos{
+    background-color: #A18D67;
+    padding: 28px 280px;
+}
+
+.contatenos h3{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.contatenos h4{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.contatenos div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contatenos div a{
+    color: black;
+    text-decoration: none;
+}
+
+.contatenos a{
+    height: 30px;
+    margin-bottom: 15px;
+    outline: 0;
+    text-decoration: underline;
+}
+
+.contatenos a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+#sobre{
+    background-color: #804E49;
+    height: 91vh;
+}
+
+.sobre{
+    padding: 4.5% 9%;
+}
+
+.sobre h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.sobre p{
+    color: black;
+}
+
+.sobre .img-wrapper a{
+    width: 100%;
+    height: 100%;
+    margin-top: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .img-wrapper img{
+    width: 50%;
+}
+
+
+@media screen and (min-width: 1920px){
+    
+    nav ul.logo{
+        padding: 0.2%;
+    }
+
+    form{
+        max-width: 1640px;
+    }
+
+}
+
+@media screen and (min-width: 1280px){
+
+    nav ul.logo{
+        padding: 0.45%;
+    }
+
+    #sobre .img-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    #sobre .img-wrapper a{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        width: 556px;
+        height: 340px;
+    }
+
+    #sobre .img-wrapper img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+
+    .pedido{
+        background-color: #E7DECD;
+        padding: 0 100px;
+    }
+
+    .form button[form=form_id]{
+        font-size: 12px;
+    }
+
+    .form button[form=form_id]:hover{
+        font-size: 12px;
+    }
+
+    .form form .form-wrapper div.obseconfirm input[type=submit]{
+        font-size: 12px;
+    }
+
+    .form form .form-wrapper div.obseconfirm input[type=submit]:hover{
+        font-size: 11px;
+    }
+
+    .contatenos{
+        padding: 28px 140px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .pedido{
+        background-color: #E7DECD;
+        padding: 0 80px;
+    }
+
+    .contatenos div.smwrapper{
+        display: block;
+    }
+
+    .contatenos div.smwrapper div{
+        margin-bottom: 20px;
+    }
+
+    .cardapio-wrapper{
+        padding: 0 5%;
+    }
+    
+    .form button[form=form_id]{
+        font-size: 11px;
+    }
+
+    .form button[form=form_id]:hover{
+        font-size: 11px;
+    }
+    
+    .form form .form-wrapper div.obseconfirm input[type=submit]{
+        font-size: 11px;
+    }
+
+    .form form .form-wrapper div.obseconfirm input[type=submit]:hover{
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 936px){
+
+    nav ul.navegacao{
+        display: none;
+    }
+
+    nav ul.hamburger{
+        display: block;
+    }
+
+    .pedido{
+        padding: 28px 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pedido .form{
+        width: 100%;
+        padding: 0 5%;
+        margin: 30px 0 0 0;
+        flex-direction: column;
+    }
+
+    .pedido .form form{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pedido .form .sumup-wrapper{
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .form button[form=form_id]{
+        font-size: 10px;
+    }
+
+    .form button[form=form_id]:hover{
+        font-size: 10px;
+    }
+    
+    .form form .form-wrapper div.obseconfirm input[type=submit]{
+        font-size: 13px;
+    }
+
+    .form form .form-wrapper div.obseconfirm input[type=submit]:hover{
+        font-size: 13px;
+    }
+
+    div.sumup{
+        height: 200px;
+    }
+
+    .sumup h3{
+        margin-bottom: 0;
+    }
+
+    .vermais{
+        margin-bottom: 0;
+        height: 100px;
+    }
+
+    .sumup img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .pedido-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 715px){
+
+    .produtos-destaque{
+        width: 500px;
+        height: 500px;
+    }
+    
+    .contatenos{
+        text-align: center;
+        padding: 28px 5%;
+    }
+
+    .contatenos div, .contatenos h3{
+        margin-bottom: 30px;
+    }
+
+    .form form .form-wrapper div{
+        display: block;
+    }
+
+    .form form .form-wrapper div.nomeetelefone div:nth-of-type(1),.form form .form-wrapper div.nomeetelefone div:nth-of-type(2){
+        width: 100%;
+    }
+
+    .form form .form-wrapper div.novoproduto div:first-of-type,.form form .form-wrapper div.novoproduto div:nth-of-type(2),.form form .form-wrapper div.novoproduto div:nth-of-type(3){
+        width: 100%;
+    }
+    
+    .form form .form-wrapper div.obseconfirm{
+        display: block;
+    }
+
+    .form form .form-wrapper div.obseconfirm div:nth-of-type(1):not(:last-of-type),.form form .form-wrapper div.obseconfirm div:nth-of-type(2){
+        width: 100%;
+    }
+
+    .form button[form=form_id]{
+        font-size: 13px;
+    }
+
+    .form button[form=form_id]:hover{
+        font-size: 14px;
+    }
+
+    .form form .form-wrapper div.obseconfirm input[type=submit]{
+        font-size: 14px;
+    }
+
+    .form form .form-wrapper div.obseconfirm input[type=submit]:hover{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .produtos-destaque{
+        width: 400px;
+        height: 400px;
+    }
+    
+}

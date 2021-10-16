@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Bebela English</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="navigation">
+			<form>
+			    <label for="lang-switch">
+			        <span lang="en">Language</span>
+			        <span lang="pt">Idioma</span>
+			    </label>
+			    <select id="lang-switch">
+			        <option value="en" selected>English</option>
+			        <option value="pt">Portugues</option>
+			    </select>
+			</form>
+
+			<ul>
+				<li><a lang="en" href="#">Section-1</a></li>
+				<li><a lang="en" href="#">Section-2</a></li>
+				<li><a lang="en" href="#">Section-3</a></li>
+				<!-- ----------------------------------- -->
+				<li><a lang="pt" href="#">Seção-1</a></li>
+				<li><a lang="pt" href="#">Seção-2</a></li>
+				<li><a lang="pt" href="#">Seção-3</a></li>
+			</ul>
+		</div>
+
+		<div class="section-1">
+			<div class="welcome">
+				<h1 lang="en">Welcome!!</h1>
+				<h1 lang="pt">Bem-vindo!!</h1>
+			</div><!--welcome-->
+
+			<div class="visitor">
+				<a lang="en" href="teacher.html">Teacher</a>
+				<a lang="en" href="parent.html">Parent</a>
+				<a lang="en" href="student.html">Student</a>
+				<!-- ------------------------------------- -->
+				<a lang="pt" href="teacher.html">Professor</a>
+				<a lang="pt" href="parent.html">Pai</a>
+				<a lang="pt" href="student.html">Aluno</a>
+			</div><!--welcome-->
+		</div><!--section-1-->
+
+		<div section-2>
+			
+		</div><!--section-2-->
+
+		<!-- Início do script (botão de troca de idioma) -->
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script>
+		$('[lang]').show(); // hide all lang attributes on start.
+		$('[lang="pt"]').hide(); // show just Portuguese text (you can change it)
+		$('#lang-switch').change(function () { // put onchange event when user select option from select
+		    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+		    switch (lang) {
+		        case 'en':
+		            $('[lang]').hide();
+		            $('[lang="en"]').show();
+		        break;
+		        case 'pt':
+		            $('[lang]').hide();
+		            $('[lang="pt"]').show();
+		        break;
+		        default:
+		            $('[lang]').show();
+		            $('[lang="pt"]').hide();
+		        }
+		});
+		</script>
+
+	</body>
+
+</html>

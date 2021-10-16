@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+div.textos{
+    padding-top: 60px;
+    font-size: larger;
+    text-align: center;
+}
+
+h2 a{
+    color: red;
+}
+
+h2 a:hover{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.img{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.sobre{
+    cursor: pointer;
+}
+
+.sob{
+    display: none;
+}
