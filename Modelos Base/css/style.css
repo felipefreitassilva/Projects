@@ -19,14 +19,3 @@ body {
 .flex {
   display: flex;
 }
-
-header {
-  width: 100%;
-  position: fixed;
-  justify-content: space-between;
-  box-shadow: 0 5px 50px -30px #000000;
-}
-
-nav ul {
-  flex-direction: row;
-}
