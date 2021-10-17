@@ -1,85 +1,83 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-html, body{
-	height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-
-.flag-wrapper{
-	height: 100%;
-	padding: 10% 25%;
-	display: flex;
-	align-items: center;
+.flag-wrapper {
+  height: 100%;
+  padding: 10% 25%;
+  display: flex;
+  align-items: center;
 }
-
 
 /* Aqui começa a bandeira da Alemanha */
 
-.alemanha{
-	width: 600px;
-	height: 400px;
-	position: relative;
-	bottom: 300px;
+.alemanha {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  bottom: 300px;
 }
 
-.preto-de{
-	width: inherit;
-	height: calc(100% / 3);
-	margin: 0 auto;
-	background-color: black;
+.preto-de {
+  width: inherit;
+  height: calc(100% / 3);
+  margin: 0 auto;
+  background-color: black;
 }
 
-.vermelho-de{
-	width: 100%;
-	height: calc(100% / 3);
-	margin: 0 auto;
-	background-color: #f00;
+.vermelho-de {
+  width: 100%;
+  height: calc(100% / 3);
+  margin: 0 auto;
+  background-color: #f00;
 }
 
-.amarelo-de{
-	width: 100%;
-	height: calc(100% / 3);
-	margin: 0 auto;
-	background-color: rgb(255, 255, 0);
+.amarelo-de {
+  width: 100%;
+  height: calc(100% / 3);
+  margin: 0 auto;
+  background-color: rgb(255, 255, 0);
 }
 
 /* Aqui começa a bandeira do Brasil */
 
-.brasil{
-	position: absolute;
-	margin-top: 800px;
+.brasil {
+  position: absolute;
+  margin-top: 800px;
 }
 
-.verde-br{
-	position: relative;
-	width: 600px;
-	height: 400px;	
-	background-color: green;
-	z-index: 1;
+.verde-br {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: green;
+  z-index: 1;
 }
 
-.amarelo-br{
-	position: relative;
-	width: 282px;
-	height: 282px;
-	background-color: yellow;
-	z-index: 2;
-	transform: rotate(45deg);
-	bottom: 340px;
-	left: 156px;	
+.amarelo-br {
+  position: relative;
+  width: 282px;
+  height: 282px;
+  background-color: yellow;
+  z-index: 2;
+  transform: rotate(45deg);
+  bottom: 340px;
+  left: 156px;
 }
 
-.azul-br{
-	position: relative;
-	width: 250px;
-	height: 250px;
-	background-color: blue;
-	z-index: 3;
-	border-radius: 100%;
-	bottom: 610px;
-	left: 170px;
+.azul-br {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  z-index: 3;
+  border-radius: 100%;
+  bottom: 610px;
+  left: 170px;
 }
