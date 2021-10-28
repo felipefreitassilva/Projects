@@ -38,6 +38,10 @@ a:hover {
   background-color: #2196f3;
 }
 
+a div.more {
+  display: none;
+}
+
 a img {
   width: 400px;
   height: 300px;
