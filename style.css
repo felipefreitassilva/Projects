@@ -38,11 +38,6 @@ a:hover {
   background-color: #2196f3;
 }
 
-a img {
-  width: 400px;
-  height: 300px;
-}
-
 @media screen and (max-width: 1200px) {
   .grid-container {
     display: grid;
