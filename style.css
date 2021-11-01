@@ -33,9 +33,18 @@ a {
 
 a:hover {
   color: white;
-  transition: 0.5s;
+  transition: 0.6s;
   cursor: pointer;
   background-color: #2196f3;
+}
+
+a div.more {
+  display: none;
+}
+
+a img {
+  width: 400px;
+  height: 300px;
 }
 
 @media screen and (max-width: 1200px) {
