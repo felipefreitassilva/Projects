@@ -22,7 +22,7 @@ ul li {
   list-style-type: none;
 }
 
-a {
+button {
   color: black;
   display: flex;
   align-items: center;
@@ -31,18 +31,18 @@ a {
   justify-content: center;
 }
 
-a:hover {
+button:hover {
   color: white;
   transition: 0.6s;
   cursor: pointer;
   background-color: #2196f3;
 }
 
-a div.more {
+button div.more {
   display: none;
 }
 
-a img {
+button img {
   width: 400px;
   height: 300px;
 }
